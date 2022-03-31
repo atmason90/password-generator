@@ -41,7 +41,6 @@ function generatePassword (){
       var hasNumbers = confirm("Do you want to include numbers?");
     }
   
-
     //if no confirms
     if (!hasUpperCase && !hasLowerCase && !hasSpecialChar && !hasNumbers) {
       var userCharChoices = alert("You must choose at least one criteria");
@@ -50,7 +49,64 @@ function generatePassword (){
       userCharChoices = upperCase.concat(lowerCase, specialChar, numbers);
     }
     //3 confirms
-}
+    else if(hasUpperCase && hasLowerCase && hasNumbers) {
+      userCharChoices = upperCase.concat(lowerCase, numbers);
+    }
+    else if(hasUpperCase && hasLowerCase && hasSpecialChar) {
+      userCharChoices = upperCase.concat(lowerCase, specialChar);
+    }
+    else if(hasUpperCase && hasNumbers && hasSpecialChar) {
+      userCharChoices = upperCase.concat(numbers, specialChar);
+    }
+    else if(hasLowerCase && hasNumbers && hasSpecialChar) {
+      userCharChoices = lowerCase.concat(numbers, specialChar);
+    }
+    //2 confirms
+    else if(hasUpperCase && hasLowerCase) {
+      userCharChoices = upperCase.concat(lowerCase);
+    }
+    else if(hasUpperCase && hasSpecialChar) {
+      userCharChoices = upperCase.concat(specialChar);
+    }
+    else if(hasUpperCase && hasNumbers) {
+      userCharChoices = upperCase.concat(numbers);
+    }
+    else if(hasLowerCase && hasSpecialChar) {
+      userCharChoices = lowerCase.concat(specialChar);
+    }
+    else if(hasLowerCase && hasNumbers) {
+      userCharChoices = lowerCase.concat(numbers);
+    }
+    else if(hasSpecialChar && hasNumbers) {
+      userCharChoices = specialChar.concat(numbers);
+    }
+    //1 confirm
+    else if(hasUpperCase) {
+      userCharChoices = upperCase;
+    }
+    else if(hasLowerCase) {
+      userCharChoices = lowerCase;
+    }
+    else if(hasSpecialChar) {
+      userCharChoices = specialChar;
+    }
+    else if(hasNumbers) {
+      userCharChoices = numbers;
+    };
+
+    //create variable for final password
+    var finalPassword = [];
+
+    //for loop to randomly generate password based on user inputs
+    for(var i = 0; i < passwordLength; i++) {
+      var randomOutput = userCharChoices[Math.floor(Math.random() * userCharChoices.length)];
+      finalPassword.push(randomOutput);
+    }
+
+    var password = finalPassword.join("");
+    return password;
+
+};
 
 
 // THEN I am presented with a series of prompts for password criteria
