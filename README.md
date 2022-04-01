@@ -54,6 +54,11 @@ This example shows how I utilized a for loop to generate the random password.
 
 ## Links
 
+Deployed Application:
+https://atmason90.github.io/password-generator/
+
+GitHub Repository:
+https://github.com/atmason90/password-generator
 
 ## License
 
