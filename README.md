@@ -86,6 +86,10 @@ SOFTWARE.
 
 ## References
 
+Starter code provided by UC Berkeley Extension
 
 ## Technologies Used
 
+![HTML Badge](https://img.shields.io/badge/Language-<HTML>-<BLUE>)
+![CSS Badge](https://img.shields.io/badge/Language-<CSS>-<RED>)
+![Javascript Badge](https://img.shields.io/badge/Language-<Javascript>-<YELLOW>)
