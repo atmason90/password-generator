@@ -109,34 +109,3 @@ function generatePassword (){
 };
 
 
-// THEN I am presented with a series of prompts for password criteria
-    //issue prompts to user
-      //prompted for the length
-        //at least 8 characters and no more than 128 characters
-      //asked for character type
-        // confirm whether or not to include lowercase, 
-        // uppercase, 
-        // numeric, 
-        // and/or special characters
-      //Input should be validated 
-        //at least one character type should be selected
-      //a password is generated that matches the selected criteria
-        //How?
-//}
-
-//function issuePrompts(){
-  //characterLengthPrompt();
-  //asked for character type???
-//}
-
-//function characterLengthPrompt(){
-  //at least 8 characters and no more than 128 characters???
-//}
-
-//function confirmLowercase(){
-  // confirm whether or not to include lowercase, ???
-//}
-
-//function valideateUserChoice(){
-  //make sure that at least one character type should be selected
-//}
