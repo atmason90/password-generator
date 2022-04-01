@@ -50,7 +50,7 @@ This example shows how I utilized a for loop to generate the random password.
 
 ## Demo
 
-
+![Demo of password generator](assets/demo.gif)
 
 ## Links
 
